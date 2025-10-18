@@ -1,0 +1,65 @@
+body {
+    /* agar di tengah */
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right, white, rgb(235, 177, 186));
+}
+form { background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(190, 141, 141);
+    text-align: center;
+    width: 100%; /* agar responsive*/
+    max-width: 400px; /*batas*/
+}
+itemInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#itemInput:focus {
+    border-color: #1976d2;
+    outline: none;
+}
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px; /* tambah padding biar tombolnya lebih besar*/
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /*biar ada jarak dari input*/
+
+}
+button:hover {
+    background-color: #1976d2;
+}
+#errorMessage {
+    color: red;
+    font-size: 0,9em;
+    display: block;
+    margin-top: 5px;
+}
+#daftar {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+}
+#daftar li {
+    margin-top: 8px;
+    color: black;
+    padding: 5px;
+    background: rgb(247, 152, 168);
+    border-radius: 5px;
+}
+.invalid {
+    border-color: red;
+}
+.valid {
+    border-color: green;
+}

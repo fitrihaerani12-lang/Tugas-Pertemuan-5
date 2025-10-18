@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Latihan1 JS</title>
+</head>
+<body>
+    <h1 id="judul">Halo Dunia</h1>
+    <button id="ubah">Ubah Teks</button>
+    <script>
+        const tombol = document.getElementById("ubah");
+        const pesan = document.getElementById("judul");
+        tombol.addEventListener("click", function () {
+            pesan.textContent = "Teks Berhasil Diubah!";
+            tombol.style.backgroundColor = "red";
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

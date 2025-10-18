@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #fae4c6, #f5fcb6); /* Tema gradient */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 247, 247, 0.1);
+}
+
+h1 { text-align: center; color: black; }
+#todoForm { display: flex; margin-bottom: 10px; }
+#todoInput {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Animasi */
+}
+
+#todoInput:focus { border-color: #007bff; }
+#addBtn {
+    padding: 10px 15px;
+    background: #14798b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#addBtn:hover { background: #218838; }
+#errorMessage { margin: 10px 0; }
+#todoList { list-style: none; padding: 0; }
+#todoList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s; /* Animasi hover */
+}
+
+#todoList li:hover { background: #f8f9fa; }
+#todoList li.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+    background: #d4edda; /* Warna hijau untuk selesai */
+}
+
+.complete-btn {
+    background: #007bff;  /* Biru untuk selesai */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background 0.3s;
+}
+.complete-btn:hover { background: #0056b3; }
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.delete-btn:hover { background: #c82333; }
+.edit-btn {
+    background: #ffc107;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background 0.3s;
+}
+
+.edit-btn:hover { background: #e0a800; }
+/* Animasi tambah item */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+#todoList li { animation: fadeIn 0.5s; }
+
+@media (max-width: 600px) {
+    .container { padding: 20px; }
+    #todoForm { flex-direction: column; }
+     }

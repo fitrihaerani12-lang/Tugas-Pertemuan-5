@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Todo List</h1>
+        <form id="todoForm">
+            <input type="text" id="todoInput" placeholder="Ketik tugas baru..." required>
+            <button type="submit" id="addBtn">Tambah</button>
+        </form>
+        <p id="errorMessage" style="color: red; display: none;">Tugas tidak boleh kosong!</p>
+        <ul id="todoList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
